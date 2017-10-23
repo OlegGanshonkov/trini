@@ -1,0 +1,91 @@
+
+.button_1 {
+    &:hover, &:focus {
+        color: #fff;
+        background: #ffbd00;
+    }
+    transition: all .5s ease 0s;
+    font-family: 'exo2-regular';
+    font-size: 20px;
+    line-height: 22px;
+    text-decoration: none !important;
+    background: #ffa400;
+    color: #fff;
+    box-shadow: 0 2px 4px -2px rgba(0,0,0,.6);
+    white-space: nowrap;
+
+    display: inline-block;
+    border-radius: 4px;
+    line-height: 22px; 
+
+    margin: 0px;
+    padding: 26px 25px;
+
+    border:0px;
+
+    @media (max-width: 768px){
+        padding: 14px;
+        font-size: 14px;
+        width: 200px;
+        display: block;
+        margin: 0 auto !important;
+    }
+
+}
+
+.button_2 {
+    &:hover, &:focus {
+        color: #000;
+        background: #e4e4e4;
+    }
+    transition: all .5s ease 0s;
+    font-family: 'exo2-regular';
+    font-size: 20px;
+    line-height: 22px;
+    text-decoration: none !important;
+    background: #fff;
+    color: #000;
+    box-shadow: 0 2px 4px -2px rgba(0,0,0,.6);
+    white-space: nowrap;
+
+    display: inline-block;
+    border-radius: 4px;
+    line-height: 22px; 
+
+    margin: 0px;
+    padding: 26px 25px;
+    border:0px;
+
+    @media (max-width: 768px){
+        padding: 14px;
+        font-size: 14px;
+        width: 200px;
+        display: block;
+        margin-left: 0px;
+        margin: 0 auto !important;
+    }
+
+    .icon:before { 
+        font-family: icons;
+        display: -moz-inline-stack;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1.06;
+        font-weight: normal;
+        font-style: normal;
+        speak: none;
+        text-decoration: inherit;
+        text-transform: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "";
+        font-size: 28px;
+        line-height: 0px;
+        margin-right: 20px;
+        
+        @media (max-width: 768px){
+            margin-right: 10px;
+        }
+    }
+
+}
