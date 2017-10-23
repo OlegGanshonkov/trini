@@ -16,3 +16,4 @@ $this->title = 'My Yii Application';
  * 
  */
 ?>
+<?= $this->render('/site/index/modal_windows') ?>
