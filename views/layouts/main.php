@@ -23,12 +23,13 @@ AppAsset::register($this);
     </head>
     <body>
         <?php $this->beginBody() ?>
-
+        
         <div class="wrap">
+            <?= app\widgets\menu\upMenu::widget(); ?>
             <?= $content ?>
         </div>
 
-        <?= $this->render('/site/index/footer') ?>
+        <?php //= $this->render('/site/index/footer') ?>
 
         <?php $this->endBody() ?>
     </body>

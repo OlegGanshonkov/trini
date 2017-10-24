@@ -4,16 +4,11 @@
 $this->title = 'My Yii Application';
 ?>
 
-<?php /*
+
 <?= $this->render('/site/index/header') ?>
-<?= $this->render('/site/index/investment') ?>
-<?= $this->render('/site/index/payment') ?>
-<?= $this->render('/site/index/best') ?>
-<?= $this->render('/site/index/securety') ?>
-<?= $this->render('/site/index/comitet') ?>
-<?= $this->render('/site/index/benefits') ?>
-<?= $this->render('/site/index/smi') ?>
- * 
- */
-?>
+<?= $this->render('/site/index/our_works') ?>
+<?= $this->render('/site/index/platforma') ?>
+<?= $this->render('/site/index/team') ?>
+<?= $this->render('/site/index/contacts') ?>
+
 <?= $this->render('/site/index/modal_windows') ?>
