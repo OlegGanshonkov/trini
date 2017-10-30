@@ -105,14 +105,14 @@ $arr[] = [
 
 <section class="our_works">
     <div class="container">
-        <h2>Наши работы <img src="/img/site/index/our_works/apple_big.png" /> <img src="/img/site/index/our_works/robot_big.png" /></h2>
+        <h2>Наши <br>работы <img src="/img/site/index/our_works/apple_big.png" /> <img src="/img/site/index/our_works/robot_big.png" /></h2>
     </div>
 
     <div class="items size_1920">
         <?php $i = 0; ?>
         <div class="items_row">
             <?php foreach ($arr as $key => $item): ?> 
-                <div class="item" style="background-image: url('<?= $item['bg']; ?>');" <?php if ($item['img']): ?> data-toggle="modal" data-target="<?= $item['target']; ?>"<?php endif; ?>>
+                <div class="item" style="background-image: url('<?= $item['bg']; ?>');" <?php if ($item['target']): ?> data-toggle="modal" data-target="<?= $item['target']; ?>"<?php endif; ?>>
                     <div class="in">
                         <div class="img"><?php if ($item['img']): ?><img src="<?= $item['img']; ?>" /><?php endif; ?></div>
                         <div class="title"><?= $item['title']; ?></div>
@@ -134,7 +134,7 @@ $arr[] = [
         <?php $i = 0; ?>
         <div class="items_row">
             <?php foreach ($arr as $key => $item): ?> 
-                <div class="item" style="background-image: url('<?= $item['bg']; ?>');">
+                <div class="item" style="background-image: url('<?= $item['bg']; ?>');" <?php if ($item['target']): ?> data-toggle="modal" data-target="<?= $item['target']; ?>"<?php endif; ?>>
                     <div class="in">
                         <div class="img"><?php if ($item['img']): ?><img src="<?= $item['img']; ?>" /><?php endif; ?></div>
                         <div class="title"><?= $item['title']; ?></div>
@@ -151,5 +151,20 @@ $arr[] = [
                 <?php $i = 0; ?>
             <?php endif; ?>
         <?php endforeach; ?>
+    </div>
+    <div class="items size_768">
+        <?php $i = 0; ?>
+        <div class="items_row">
+            <?php foreach ($arr as $key => $item): ?> 
+                <div class="item" style="background-image: url('<?= $item['bg']; ?>');" <?php if ($item['target']): ?> data-toggle="modal" data-target="<?= $item['target']; ?>"<?php endif; ?>>
+                    <div class="in">
+                        <div class="img"><?php if ($item['img']): ?><img src="<?= $item['img']; ?>" /><?php endif; ?></div>
+                        <div class="title"><?= $item['title']; ?></div>
+                        <div class="info"><?= $item['info']; ?></div>
+                        <div class="type"><?= $item['type']; ?></div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
     </div>
 </section>

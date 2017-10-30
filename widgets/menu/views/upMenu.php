@@ -57,11 +57,6 @@ $this->registerJs("
             } 
         });
         
-        $('#upMenu').on('click', '.menu_call', function (e) {
-            $('html, body').animate({scrollTop: $('#container').offset().top + 'px'});
-            return false;
-        });
-        
     })( jQuery );
 ", yii\web\View::POS_END);
 ?>

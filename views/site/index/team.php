@@ -14,70 +14,86 @@ $arr[] = [
     'img' => '/img/site/index/team/default.png',
 ];
 $arr[] = [
-    'name' => 'Михаил',
-    'position' => 'CEO',
+    'name' => 'Екатерина Колесникова',
+    'position' => 'iOS',
     'img' => '/img/site/index/team/default.png',
 ];
 $arr[] = [
-    'name' => 'Михаил',
-    'position' => 'CEO',
+    'name' => 'Андрей Хитрый',
+    'position' => 'Android',
     'img' => '/img/site/index/team/default.png',
 ];
 $arr[] = [
-    'name' => 'Михаил',
-    'position' => 'CEO',
+    'name' => 'Владислав Чугункин',
+    'position' => 'iOS',
     'img' => '/img/site/index/team/default.png',
 ];
 $arr[] = [
-    'name' => 'Михаил',
-    'position' => 'CEO',
+    'name' => 'Игорь Тюкавкин',
+    'position' => 'iOS',
     'img' => '/img/site/index/team/default.png',
 ];
 $arr[] = [
-    'name' => 'Михаил',
-    'position' => 'CEO',
+    'name' => 'Владимир Барабаш',
+    'position' => 'Backend / Frontend',
     'img' => '/img/site/index/team/default.png',
 ];
 $arr[] = [
-    'name' => 'Михаил',
-    'position' => 'CEO',
+    'name' => 'Оксана Покровская',
+    'position' => 'Android',
     'img' => '/img/site/index/team/default.png',
 ];
 $arr[] = [
-    'name' => 'Михаил',
-    'position' => 'CEO',
+    'name' => 'Максим Железный',
+    'position' => 'QA',
     'img' => '/img/site/index/team/default.png',
 ];
 $arr[] = [
-    'name' => 'Михаил',
-    'position' => 'CEO',
+    'name' => 'Ирина Джиоева',
+    'position' => 'PM',
     'img' => '/img/site/index/team/default.png',
 ];
 $arr[] = [
-    'name' => 'Михаил',
-    'position' => 'CEO',
+    'name' => 'Рида Хасанова',
+    'position' => 'Design',
     'img' => '/img/site/index/team/default.png',
 ];
 $arr[] = [
-    'name' => 'Михаил',
-    'position' => 'CEO',
+    'name' => 'Кирилл Рак',
+    'position' => 'PM',
     'img' => '/img/site/index/team/default.png',
 ];
 $arr[] = [
-    'name' => 'Михаил',
-    'position' => 'CEO',
+    'name' => 'Андрей Зайцев',
+    'position' => 'QA',
     'img' => '/img/site/index/team/default.png',
 ];
 $arr[] = [
-    'name' => 'Михаил',
-    'position' => 'CEO',
+    'name' => 'Игорь Ямушев',
+    'position' => 'Android',
     'img' => '/img/site/index/team/default.png',
 ];
 $arr[] = [
-    'name' => 'Михаил',
-    'position' => 'CEO',
+    'name' => 'Дарья Горчакова',
+    'position' => 'PR',
     'img' => '/img/site/index/team/default.png',
 ];
+$arr[] = [
+    'name' => 'Евгений Калинин',
+    'position' => 'Backend',
+    'img' => '/img/site/index/team/default.png',
+];
+$arr[] = [
+    'name' => 'Роман Голышков',
+    'position' => 'Design',
+    'img' => '/img/site/index/team/default.png',
+];
+$arr[] = [
+    'name' => 'Владимир Зуев',
+    'position' => 'PM',
+    'img' => '/img/site/index/team/default.png',
+];
+
 ?>
 
 
