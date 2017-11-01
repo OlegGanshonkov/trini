@@ -66,6 +66,14 @@
             }
         });
     });
+    $('.brand').find('a').on('click', function (e) {
+
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
+        
+        return false;
+    });
 
     $('#menumobile').find('a').on('click', function (e) {
         // move to

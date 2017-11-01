@@ -371,6 +371,14 @@ body .mobile_menu {
 @media (max-width: 768px) {
   body .mobile_menu {
     display: block;
+    position: absolute;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: black;
+    overflow: hidden;
+    width: 100%;
+    z-index: 1000;
   }
 }
 body .mobile_menu #menumobile {
@@ -394,8 +402,8 @@ body header {
 }
 @media (max-width: 768px) {
   body header {
-    min-height: 440px;
-    background: url('/img/site/index/header/bg460.jpg') no-repeat top center;
+    min-height: 350px;
+    background: url('/img/site/index/header/bg460.jpg') no-repeat bottom center;
     background-size: cover;
   }
 }
@@ -495,7 +503,7 @@ body header .logo {
 }
 body section.our_works {
   padding: 0px 0px 0px 0px;
-  background: #fff;
+  background: transparent;
 }
 @media (max-width: 768px) {
   body section.our_works .container {
@@ -532,7 +540,7 @@ body section.our_works h2 br {
 @media (max-width: 768px) {
   body section.our_works h2 {
     font-size: 40px;
-    margin-top: 100px;
+    margin-top: 80px;
     margin-bottom: 10px;
   }
 }

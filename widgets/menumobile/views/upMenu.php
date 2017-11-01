@@ -5,8 +5,8 @@ use yii\bootstrap\Nav;
 ?>
 
 <div id="menumobile">
-    <div class="col-xs-five item">
-        <a href="/"><img src="/img/site/menumobile/trinity.png" /></a>
+    <div class="col-xs-five item brand">
+        <a href="/" ><img src="/img/site/menumobile/trinity.png" /></a>
     </div>
     <div class="col-xs-five item">
         <a href="/#our_works"><img src="/img/site/menumobile/works.png" /></a>

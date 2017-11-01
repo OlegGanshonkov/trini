@@ -12,7 +12,8 @@ NavBar::begin([
     'brandUrl' => Yii::$app->homeUrl,
     'options' => [
         'id' => 'menu',
-        'class' => 'navbar-inverse navbar-fixed-top',
+        'class' => 'navbar-inverse navbar-fixed-top brand',
+        'onclick' => "",
     ],
 ]);
 echo Nav::widget([

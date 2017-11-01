@@ -248,6 +248,14 @@ body {
         display: none;
         @media(max-width: 768px) {
             display: block;
+            position: absolute;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            background: black;
+            overflow: hidden;
+            width: 100%;
+            z-index: 1000;
         }
         background: black;
         overflow: hidden;
@@ -279,8 +287,8 @@ body {
         min-height: 550px;
 
         @media (max-width: 768px){
-            min-height: 440px;
-            background: url('/img/site/index/header/bg460.jpg') no-repeat top center;
+            min-height: 350px;
+            background: url('/img/site/index/header/bg460.jpg') no-repeat bottom center;
             background-size: cover;
         }
 
@@ -371,7 +379,7 @@ body {
      */
     section.our_works {
         padding: 0px 0px 0px 0px;
-        background: #fff;
+        background: transparent;
         @media (max-width: 768px){
             .container {
                 padding: 0px 15px;
@@ -401,7 +409,7 @@ body {
 
             @media (max-width: 768px){
                 font-size: 40px;
-                margin-top: 100px;
+                margin-top: 80px;
                 margin-bottom: 10px;
             }
             @media (max-width: 360px){
@@ -1147,7 +1155,7 @@ body {
                         @media(max-width: 370px) { font-size: 16px; padding-left: 12px; }
                     }
                 }
-        
+
                 .row_under_middle {
                     width: 100%;
                     margin: 0 auto;
@@ -1189,7 +1197,7 @@ body {
                         }
                     }
                 }
-        
+
             }
 
             .txt_bottom {
