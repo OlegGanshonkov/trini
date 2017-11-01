@@ -5,7 +5,7 @@ use yii\bootstrap\Nav;
 ?>
 
 <div id="menumobile">
-    <div class="col-xs-five item brand">
+    <div class="col-xs-five item mobilebrand">
         <a href="/" ><img src="/img/site/menumobile/trinity.png" /></a>
     </div>
     <div class="col-xs-five item">

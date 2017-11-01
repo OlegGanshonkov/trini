@@ -66,14 +66,16 @@
             }
         });
     });
-    $('.brand').find('a').on('click', function (e) {
+    $('.navbar-header').find('a').on('click', function (e) {
 
         $('html, body').animate({
             scrollTop: 0
         }, 500);
+        history.pushState(null, null, '/');
         
         return false;
     });
+    
 
     $('#menumobile').find('a').on('click', function (e) {
         // move to
@@ -86,6 +88,16 @@
 
         if (window.location.hash) {
         }
+    });
+    
+    $('.mobilebrand').on('click', function (e) {
+
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
+        history.pushState(null, null, '/');
+        
+        return false;
     });
 
 })();
