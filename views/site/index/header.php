@@ -1,11 +1,13 @@
 <?php
 /* @var $this yii\web\View */
+use rmrevin\yii\fontawesome\FA;
 ?>
 
 <div class="clearfix"></div>
 <header>
     <div class="container">
-        <div class="title">Привет <img src="/img/site/index/header/hand.png" />!</div>
+        <div class="title">Привет <img src="/img/site/index/header/hand.png" />!
+        </div>
         <p class="our">
             Мы
         </p>

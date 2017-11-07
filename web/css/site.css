@@ -19,6 +19,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Symbola";
+  src: url("/fonts/Symbola/Symbola_hint.eot");
+  src: url("/fonts/Symbola/Symbola_hint.eot#iefix") format('eot'), url("/fonts/Symbola/Symbola_hint.woff") format('woff'), url("/fonts/Symbola/Symbola_hint.ttf") format('truetype'), url("/fonts/Symbola/Symbola_hint.svg") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 .button_1 {
   transition: all .5s ease 0s;
   font-family: 'exo2-regular';
