@@ -564,6 +564,7 @@ body section.our_works .items {
   padding: 0px;
   border-collapse: collapse;
   background: #000;
+  border: 1px solid transparent;
 }
 body section.our_works .items .items_row {
   display: table-row;
@@ -576,12 +577,43 @@ body section.our_works .items .item {
   padding: 10px;
   padding-top: 120px;
   background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
   display: table-cell;
   width: 16.6%;
   box-sizing: border-box;
   vertical-align: bottom;
   cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all .8s;
+}
+body section.our_works .items .item:hover:after {
+  transform: scale(1.9);
+}
+body section.our_works .items .item:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  transition: inherit;
+}
+@media (max-width: 768px) {
+  body section.our_works .items .item {
+    padding-top: 260px;
+  }
+}
+@media (max-width: 400px) {
+  body section.our_works .items .item {
+    padding-top: 160px;
+  }
+}
+body section.our_works .items .item .in {
+  position: relative;
+  z-index: 10;
 }
 body section.our_works .items .item .title {
   padding-top: 25px;
@@ -627,6 +659,11 @@ body section.platforma {
   background-size: contain;
   background-color: #f9cd3f;
   min-height: 600px;
+}
+@media (min-width: 1600px) {
+  body section.platforma {
+    min-height: 700px;
+  }
 }
 @media (max-width: 768px) {
   body section.platforma {
@@ -800,6 +837,10 @@ body section.contacts .items > div {
 }
 body section.contacts .items > div img {
   vertical-align: top;
+}
+body section.contacts .items > div a {
+  color: #fff;
+  text-decoration: none;
 }
 body section.contacts .items > div:last-child {
   margin-right: 0px;

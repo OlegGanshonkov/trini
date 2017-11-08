@@ -425,6 +425,7 @@ body {
             padding:0px;
             border-collapse: collapse;
             background: #000;
+            border:1px solid transparent;
 
             .items_row {
                 display: table-row;
@@ -433,11 +434,24 @@ body {
             }
 
             .item {
+                &:hover{
+                    &:after {
+                        transform: scale(1.9);
+                    }
+                }
+                &:after {
+                    content:"";
+                    position:absolute; top:0;right:0;bottom:0;left:0;
+                    background:inherit;
+                    transition:inherit;
+                }
+
                 position: relative;
                 overflow: hidden;
                 padding: 10px;
                 padding-top: 120px;
                 background-size: cover;
+                background-position: center center;
                 background-repeat: no-repeat;
                 display: table-cell;
                 width: 16.6%;
@@ -445,10 +459,22 @@ body {
                 vertical-align: bottom;
                 cursor: pointer;
 
-                .in {
+                -webkit-transition: all 0.5s ease;
+                -ms-transition: all 0.5s ease;
+                transition: all .8s;
+
+                @media (max-width: 768px){
+                    padding-top: 260px;
+                }
+                @media (max-width: 400px){
+                    padding-top: 160px;
                 }
 
 
+                .in {
+                    position: relative;
+                    z-index: 10;
+                }
 
                 .title {
                     padding-top: 25px;
@@ -473,6 +499,8 @@ body {
 
 
             }
+
+
         }
 
         .items.size_1920 {
@@ -511,6 +539,9 @@ body {
         background-size: contain;
         background-color: #f9cd3f;
         min-height: 600px;
+        @media (min-width: 1600px){
+           min-height: 700px;
+        }
         @media (max-width: 768px){
             min-height: 450px;
             background: url('@{img}/site/index/platforma/bg_mobile2.png') bottom center no-repeat #f9cd3f;
@@ -682,6 +713,11 @@ body {
 
                 img {
                     vertical-align: top;
+                }
+                
+                a {
+                    color: #fff;
+                    text-decoration: none;
                 }
             }
             >div:last-child {
