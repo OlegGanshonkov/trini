@@ -1,6 +1,6 @@
 <div class="high-div">
 	<p>
-		<img src="/img/site/modal/ic-julia.jpg" />
+		<img src="/img/site/modal/ic-julia.png" />
 	</p>
 	<h2>Рецепты<br />Юлии Высоцкой</h2>
 	<div class="right-mobile">
@@ -11,7 +11,7 @@
 </div>
 
 <div class="big_img">
-	<img src="/img/site/modal/big_img.png" />
+	<img src="/img/site/modal/bitmap_3.jpg" />
 </div>
 
 <div class="txt-row">
@@ -43,7 +43,7 @@
 		</p>
 	</div>
 	<div class="big_img_gray">
-		<img src="/img/site/modal/big_img_gray.png" />
+		<img src="/img/site/modal/big_img_gray_2.png" />
 	</div>
 	<div style="float: none; clear: both; height: 30px;"></div>
 	<div class="txt-row_gray">
@@ -60,16 +60,18 @@
 	    	<div class="img-container-gray">
 	    		<img src="/img/site/modal/ios_iphone.png" /> 
 	    		<p>Приложение также доступно на Android, но сейчас речь про iOS.</p>
-    		</div>               
+    		</div>   
+    		<div class="img-container-gray-dubl" style="display: none;">
+    		</div>            
 	    </div>
 	</div>
 </div>
 <div class="bg_img_full">
-	<img src="/img/site/modal/bg_img_full.png" /> 
+	<img src="/img/site/modal/bg_img_full.jpg" /> 
 </div>
 
 <div class="txt_middle">
-	<h4>Следуя задаче и продолжая прокачивать приложение, мы:</h4>
+	<h4>Следуя задаче и продолжая прокачивать<br /> приложение, мы:</h4>
 	<div class="row middle_row">
 		<div class="first-item">
 			<div class="inner_item col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -85,7 +87,7 @@
 				</p>
 			</div>	
 			<div class="inner_item col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<img src="/img/site/modal/bg_middle.png" />
+				<img src="/img/site/modal/bg_middle_2.png" />
 			</div>	
 		</div>
 		<div class="second-item">
@@ -107,7 +109,9 @@
 		<h4>Приятного аппетита!</h4>
 	</div>
 	<div class="row row_under_middle">				
-		<img class="ios_mag_logo" src="/img/site/modal/app_ios.png" />
+		<div class="img_contain_mag">
+			<img class="ios_mag_logo" src="/img/site/modal/app_ios_2.png" />
+		</div>
 		<div class="for_face">
 			<img class="app_face" src="/img/site/modal/app_face.png" />
 		</div>
@@ -130,3 +134,4 @@
 		</div>
 	</div>	
 </div>
+
