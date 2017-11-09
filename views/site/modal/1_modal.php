@@ -1,12 +1,15 @@
-<div class="high-div">
-    <p>
-        <img src="/img/site/modal/ic-julia.png" />
-    </p>
-    <h2>Рецепты<br />Юлии Высоцкой</h2>
-    <div class="right-mobile">
-        <p class="first"><img src="/img/site/modal/apple.png" /></p>
-        <p class="second"><img src="/img/site/modal/phone.png" /></p>
-        <p class="third"><img src="/img/site/modal/tablet.png" /></p>
+<div class="clearfix"></div>
+<div class="mycontainer">
+    <div class="high-div">
+        <p>
+            <img src="/img/site/modal/ic-julia.png" />
+        </p>
+        <h2>Рецепты<br />Юлии Высоцкой</h2>
+        <div class="right-mobile">
+            <p class="first"><img src="/img/site/modal/apple.png" /></p>
+            <p class="second"><img src="/img/site/modal/phone.png" /></p>
+            <p class="third"><img src="/img/site/modal/tablet.png" /></p>
+        </div>
     </div>
 </div>
 

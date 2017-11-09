@@ -176,7 +176,7 @@ $this->registerJs("
         $('.item').click(function() {
             var myclass = $(this).data('target');
             $(myclass)
-                .prop('class', 'modal fade') // revert to default
+                .prop('class', 'modal fade modal_1') // revert to default
                 .addClass( 'bottom' );
                 
             $(myclass).modal('show');

@@ -72,10 +72,10 @@
             scrollTop: 0
         }, 500);
         history.pushState(null, null, '/');
-        
+
         return false;
     });
-    
+
 
     $('#menumobile').find('a').on('click', function (e) {
         // move to
@@ -89,15 +89,73 @@
         if (window.location.hash) {
         }
     });
-    
+
     $('.mobilebrand').on('click', function (e) {
 
         $('html, body').animate({
             scrollTop: 0
         }, 500);
         history.pushState(null, null, '/');
-        
+
         return false;
     });
 
 })();
+
+
+// Фиксация кнопки закрытия модального окна
+(function () {
+    $('.modal_1').each(function () {
+        var el = $(this);
+        var header = el.find('.modal-header');
+        header.clone().addClass('modal_fixed').prependTo(el);
+
+
+    });
+
+    $('.modal_1').scroll(function () {
+        var el = $(this);
+        var curent_scroll = $(this).scrollTop();
+        var curent_height = $(this).height();
+        var close_fixed = $(this).find('.close');
+
+        if (curent_scroll > 0 && !close_fixed.hasClass('scrolled')) {
+            close_fixed.addClass('scrolled');
+        }
+        if (curent_scroll == 0 && close_fixed.hasClass('scrolled')) {
+            close_fixed.removeClass('scrolled');
+        }
+
+        var header = el.find('.modal_fixed');
+        if (curent_scroll >= 100) {
+            if (header.hasClass('open')) {
+
+            } else {
+                header.addClass('open')
+                var width = el.find('.modal-dialog').width();
+                if ($(window).width() > 1200) {
+                    header.width(width - 1);
+                } else {
+                    header.width(width - 2);
+                }
+            }
+        } else {
+            header.removeClass('open')
+        }
+    });
+
+    $(window).resize(function () {
+        var el = $('.modal_1.in');
+
+        if (el) {
+            var width = el.find('.modal-dialog').width();
+            var header = el.find('.modal_fixed');
+            if ($(window).width() > 1200) {
+                header.width(width - 1);
+            } else {
+                header.width(width - 2);
+            }
+        }
+    });
+
+}(jQuery));
