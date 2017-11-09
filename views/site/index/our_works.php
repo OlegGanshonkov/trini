@@ -112,7 +112,7 @@ $arr[] = [
         <?php $i = 0; ?>
         <div class="items_row">
             <?php foreach ($arr as $key => $item): ?> 
-                <div class="item" style="background-image: url('<?= $item['bg']; ?>');" <?php if ($item['target']): ?> data-toggle="modal" data-target="<?= $item['target']; ?>"<?php endif; ?>>
+                <div class="item" style="background-image: url('<?= $item['bg']; ?>');" <?php if ($item['target']): ?> data-target="<?= $item['target']; ?>"<?php endif; ?>>
                     <div class="in">
                         <div class="img"><?php if ($item['img']): ?><img src="<?= $item['img']; ?>" /><?php endif; ?></div>
                         <div class="title"><?= $item['title']; ?></div>
@@ -134,7 +134,7 @@ $arr[] = [
         <?php $i = 0; ?>
         <div class="items_row">
             <?php foreach ($arr as $key => $item): ?> 
-                <div class="item" style="background-image: url('<?= $item['bg']; ?>');" <?php if ($item['target']): ?> data-toggle="modal" data-target="<?= $item['target']; ?>"<?php endif; ?>>
+                <div class="item" style="background-image: url('<?= $item['bg']; ?>');" <?php if ($item['target']): ?> data-target="<?= $item['target']; ?>"<?php endif; ?>>
                     <div class="in">
                         <div class="img"><?php if ($item['img']): ?><img src="<?= $item['img']; ?>" /><?php endif; ?></div>
                         <div class="title"><?= $item['title']; ?></div>
@@ -156,7 +156,7 @@ $arr[] = [
         <?php $i = 0; ?>
         <div class="items_row">
             <?php foreach ($arr as $key => $item): ?> 
-                <div class="item" style="background-image: url('<?= $item['bg']; ?>');" <?php if ($item['target']): ?> data-toggle="modal" data-target="<?= $item['target']; ?>"<?php endif; ?>>
+                <div class="item" style="background-image: url('<?= $item['bg']; ?>');" <?php if ($item['target']): ?> data-target="<?= $item['target']; ?>"<?php endif; ?>>
                     <div class="in">
                         <div class="img"><?php if ($item['img']): ?><img src="<?= $item['img']; ?>" /><?php endif; ?></div>
                         <div class="title"><?= $item['title']; ?></div>
@@ -168,3 +168,20 @@ $arr[] = [
         </div>
     </div>
 </section>
+
+<?php
+// Google Tag Manager
+$this->registerJs("
+    (function($) {
+        $('.item').click(function() {
+            var myclass = $(this).data('target');
+            $(myclass)
+                .prop('class', 'modal fade') // revert to default
+                .addClass( 'bottom' );
+                
+            $(myclass).modal('show');
+        });
+        
+    })( jQuery );
+", yii\web\View::POS_END);
+?>
