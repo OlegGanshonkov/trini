@@ -173,11 +173,11 @@ body {
             }
             width: 30px;
             height: 30px;
-            background-color: #0d0e24;
             margin: 0px;
             margin-top:13px;
             margin-right: 13px;
-            background: url('@{img}/site/menu/triangle.png') center center no-repeat;
+            background: url('@{img}/site/menu/triangle2.svg') center center no-repeat;
+            background-size: contain;
         }
 
         .navbar-center {
@@ -267,6 +267,8 @@ body {
             overflow: hidden;
             width: 100%;
             z-index: 1000;
+            zoom: 1;
+            max-height: 20%;
         }
         background: black;
         overflow: hidden;
@@ -849,7 +851,7 @@ body {
     .modal-content {
         max-width: 840px;
         width: 100%;
-        border: 1px solid transparent;
+        border: 0px solid transparent;
         //border: none;
         border-radius: 0px;
         background-color: #fafafa;
@@ -1484,14 +1486,15 @@ body {
         height: auto;
         overflow: visible;
         padding: 15px 0px;
-        
+
         .close {
             font-size: 31px;
             outline: 0;
             position: absolute;
             margin-top: 0px;
             right: 13px;
-            top: 6px;
+            top: 12px;
+            z-index: 2;
         }
 
         .myheader {
@@ -1505,7 +1508,7 @@ body {
             line-height: 22px;
             color: #404040;
             @media(max-width: 420px) {  font-size: 19px; line-height: 22px; }
-            @media(max-width: 360px) { font-size: 18px; padding-right: 15px !important; }
+            @media(max-width: 360px) { font-size: 18px; padding-right: 19px !important; }
         }
     }
 }
@@ -1525,11 +1528,12 @@ body {
     -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
     @media (min-width: 768px) { 
-        left: -17px;
-        right: 0px;
+        //left: -17px;
+        //right: 0px;
     }
     @media (max-width: 768px) { 
-        margin-left: 11px;
+        //left: -17px;
+        //right: 0px;
     }
 }
 .modal_fixed.open {

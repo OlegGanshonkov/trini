@@ -11,7 +11,7 @@ use rmrevin\yii\fontawesome\FA;
         <p class="our">
             Мы
         </p>
-        <img class="logo" src="/img/site/index/header/logo.png" />
+        <img class="logo" src="/img/site/index/header/Tridi.svg" />
         <p>
             Мы делаем <span style="white-space: nowrap;"><img src="/img/site/index/header/app.png" />&nbsp;мобильные</span> приложения<br>
             под IOS и ANDROID c 2013-го года.

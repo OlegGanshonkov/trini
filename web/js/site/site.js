@@ -80,7 +80,11 @@
     $('#menumobile').find('a').on('click', function (e) {
         // move to
         var hash = $(this).attr('href').split('#')[1];
-        var to = $('section.' + hash).offset().top - 60;
+        if ($('section.' + hash).length > 0) {
+            var to = $('section.' + hash).offset().top - 60;
+        } else {
+            return true;
+        }
 
         $('html, body').animate({
             scrollTop: to
@@ -132,12 +136,12 @@
 
             } else {
                 header.addClass('open')
-                var width = el.find('.modal-dialog').width();
-                if ($(window).width() > 1200) {
-                    header.width(width - 1);
-                } else {
-                    header.width(width - 2);
-                }
+                var width = el.find('.modal-dialog').outerWidth();
+                var position = el.find('.modal-dialog').offset();
+                var left = Math.round(position.left);
+
+                header.width(width);
+                header.css('left', left);
             }
         } else {
             header.removeClass('open')
@@ -148,13 +152,13 @@
         var el = $('.modal_1.in');
 
         if (el) {
-            var width = el.find('.modal-dialog').width();
+            var width = el.find('.modal-dialog').outerWidth();
+            var position = el.find('.modal-dialog').offset();
+            var left = Math.round(position.left);
             var header = el.find('.modal_fixed');
-            if ($(window).width() > 1200) {
-                header.width(width - 1);
-            } else {
-                header.width(width - 2);
-            }
+            
+            header.width(width);
+            header.css('left', left);
         }
     });
 
