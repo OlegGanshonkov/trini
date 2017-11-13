@@ -39,6 +39,7 @@ $config = [
             ],
         ],
         'db' => $db,
+        'assetManager' => require(__DIR__ . '/assetManager.php'),
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,

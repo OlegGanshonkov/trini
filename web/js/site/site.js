@@ -140,6 +140,7 @@
                 var position = el.find('.modal-dialog').offset();
                 var left = Math.round(position.left);
 
+                el.find('.modal-dialog').width(width);
                 header.width(width);
                 header.css('left', left);
             }
@@ -158,6 +159,7 @@
             var header = el.find('.modal_fixed');
             
             header.width(width);
+            el.find('.modal-dialog').width(width);
             header.css('left', left);
         }
     });
