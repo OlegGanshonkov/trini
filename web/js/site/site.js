@@ -140,7 +140,7 @@
                 var position = el.find('.modal-dialog').offset();
                 var left = Math.round(position.left);
 
-                el.find('.modal-dialog').width(width);
+                //el.find('.modal-dialog').width(width);
                 header.width(width);
                 header.css('left', left);
             }
@@ -152,15 +152,12 @@
     $(window).resize(function () {
         var el = $('.modal_1.in');
 
-        if (el) {
-            var width = el.find('.modal-dialog').outerWidth();
-            var position = el.find('.modal-dialog').offset();
-            var left = Math.round(position.left);
+        if (el.length > 0) {
             var header = el.find('.modal_fixed');
-            
-            header.width(width);
-            el.find('.modal-dialog').width(width);
-            header.css('left', left);
+            var width2  =  document.getElementsByClassName('modal_1 in')[0].getElementsByClassName('modal-dialog')[0].getBoundingClientRect().width;
+            var left2  =  document.getElementsByClassName('modal_1 in')[0].getElementsByClassName('modal-dialog')[0].getBoundingClientRect().left;
+            header.css('width', width2+'px');
+            header.css('left', left2+'px');
         }
     });
 
