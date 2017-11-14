@@ -154,10 +154,48 @@
 
         if (el.length > 0) {
             var header = el.find('.modal_fixed');
-            var width2  =  document.getElementsByClassName('modal_1 in')[0].getElementsByClassName('modal-dialog')[0].getBoundingClientRect().width;
-            var left2  =  document.getElementsByClassName('modal_1 in')[0].getElementsByClassName('modal-dialog')[0].getBoundingClientRect().left;
-            header.css('width', width2+'px');
-            header.css('left', left2+'px');
+            var width2 = document.getElementsByClassName('modal_1 in')[0].getElementsByClassName('modal-dialog')[0].getBoundingClientRect().width;
+            var left2 = document.getElementsByClassName('modal_1 in')[0].getElementsByClassName('modal-dialog')[0].getBoundingClientRect().left;
+            header.css('width', width2 + 'px');
+            header.css('left', left2 + 'px');
+        }
+    });
+
+    var isFixedSupported = (function () {
+        var isSupported = null;
+        if (document.createElement) {
+            var el = document.createElement("div");
+            if (el && el.style) {
+                el.style.position = "fixed";
+                el.style.top = "10px";
+                var root = document.body;
+                if (root && root.appendChild && root.removeChild) {
+                    root.appendChild(el);
+                    isSupported = el.offsetTop === 10;
+                    root.removeChild(el);
+                }
+            }
+        }
+        return isSupported;
+    })();
+
+    window.onload = function () {
+        if (!isFixedSupported) {
+            document.body.className = document.body.className + ' no-fixed-supported';
+        }
+    }
+
+    $('.modal').scroll(function () {
+        if ($(this).hasClass('in')) {
+            if ($('body').hasClass('no-fixed-supported')) {
+                var box = $('.modal_fixed'); // float-fixed block
+                var top = box.offset().top - parseFloat(box.css('marginTop').replace(/auto/, 0));
+                var windowpos = $(this).scrollTop();
+
+                box.css('position', 'absolute');
+                box.css('top', windowpos);
+            }
+
         }
     });
 
