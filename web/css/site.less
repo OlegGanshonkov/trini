@@ -524,20 +524,40 @@ body {
 
         }
 
-        .items.size_1920 {
-            @media (min-width: 1280px){
+        @media (min-width: 1280px){
+            .items.size_1920 {
                 display: table;
             }
+            .items.size_1280 {
+                display: none;
+            }
+
         }
-        .items.size_1280 {
-            @media (min-width: 768px) and (max-width: 1280px){
+
+        @media (min-width: 767px) and (max-width: 1280px){
+            .items.size_1920 {
+                display: none;
+            }
+            .items.size_1280 {
                 display: table;
             }
+
         }
+        @media (max-width: 768px){
+            .items.size_1920 {
+                display: none;
+            }
+            .items.size_1280 {
+                display: none;
+            }
+            .items.size_768 {
+                display: block;
+            }
+        }
+
+
         .items.size_768 {
             @media (max-width: 768px){
-                display: block;
-
                 .items_row {
                     display: block;
                     width: 100%;

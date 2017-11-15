@@ -81,7 +81,7 @@
         // move to
         var hash = $(this).attr('href').split('#')[1];
         if ($('section.' + hash).length > 0) {
-            var to = $('section.' + hash).offset().top - 60;
+            var to = $('section.' + hash).offset().top + 10;
         } else {
             return true;
         }
@@ -179,11 +179,12 @@
         return isSupported;
     })();
 
-    window.onload = function () {
+    $(window).load(function () {
         if (!isFixedSupported) {
             document.body.className = document.body.className + ' no-fixed-supported';
         }
-    }
+        window.scrollBy(0, 1);
+    });
 
     $('.modal').scroll(function () {
         if ($(this).hasClass('in')) {

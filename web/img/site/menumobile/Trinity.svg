@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="24px" viewBox="0 0 28 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Trinity</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="320" transform="translate(-18.000000, -532.000000)">
+            <g id="Group-3" transform="translate(0.000000, 520.000000)">
+                <rect id="Rectangle-12" fill="#0D0E24" x="0" y="0" width="320" height="48"></rect>
+                <path d="M31.7877397,12.1502272 C31.9049486,11.9498316 32.0950903,11.950017 32.2121907,12.1502272 L45.9494066,35.6371517 C46.0666155,35.8375473 45.9732769,36 45.7406593,36 L18.2592711,36 C18.0267742,36 17.9334234,35.8373619 18.0505239,35.6371517 L31.7877397,12.1502272 Z M31.9999652,19.9316242 L24.9191318,32.0379347 L39.0807986,32.0379347 L31.9999652,19.9316242 Z" id="Trinity" fill="#F9F9F9"></path>
+            </g>
+        </g>
+    </g>
+</svg>
